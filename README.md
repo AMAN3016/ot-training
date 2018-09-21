@@ -1,1 +1,1 @@
-# ot-training
+# Assignment on the Devops tool 

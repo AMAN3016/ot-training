@@ -1,0 +1,10 @@
+Git is a distributed version control system  for tracking changes in computer files and coordinating work on those files among multiple
+people. It is primarily used for source code management in software development but it can be used to keep track of changes in any set of
+files.
+Git plays a vital role when it comes to managing the code that the collaborators contribute to the shared repository. This code is then 
+extracted for performing continuous integration to create a build and test it on the test server and eventually deploy it on the 
+production.
+The purpose of Git is to manage a project, or a set of files, as they change over time. Git stores this information in a data structure 
+called a repository. A git repository contains, among other things, the following: A set of commit object
+basically it has 2 repository one is local and another is remote.And developers can work offline on local repository and when he has done 
+all of the changes he can commit it to the remote repository

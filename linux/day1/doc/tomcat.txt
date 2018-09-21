@@ -1,0 +1,19 @@
+Brief explaination about the it's directories
+
+Tomcat is an application server from the Apache software Foundation that executes Java servlets and renders Web pages that JSP conding.It is open collaboration of developers and is avaible from the Apache web site in both binary and source versions.
+Tomcat requires Java Runtime Enterprise Environment
+Tomcat's root address is basically set in environment variable in CATALINA_HOME
+Important Directory of the tomcat
+1) bin directory is where its stores start,stop and other scripts
+2) Configuration files
+   - server.xml which is situated in $CATALINA_HOME/conf/server.xml. server.xml file is Tomcat's main configuration file, and is responsible for specifying Tomcat's initial configuration on startup as well as defining the way and order in which Tomcat boots and builds. The elements of the server.xml file belong to five basic categories - Top Level Elements, Connectors, Containers, Nested Components, and Global Settings. All of the elements within these categories have many attributes that can be used to fine-tune their functionality. Most often, if you need to make any major changes to your Tomcat installation, such as specifying application port numbers, server.xml is the file to edit.
+
+   - web.xml The web.xml file is derived from the Servlet specification, and contains information used to deploy and configure the components of your web applications. When configuring Tomcat for the first time, this is where you can define servlet mappings for central components such as JSP. Within Tomcat, this file functions in the same way as described in the Servlet specification. The only divergence in Tomcat's handling of this file is that a user has the option of utilizing TOMCAT-HOME/conf/web.xml to define default values for all contexts. If this method is utilized, Tomcat will use TOMCAT-HOME/conf/web.xml as a base configuration, which can be overwritten by application-specific WEB-INF/web.xml files.
+
+   - tomcat-user.xml Default lists of roles, users, and passwords that Tomcat's UserDatabaseRealm will use for authentication can be found in tomcat-users.xml.If you want to access any of the administrative tools that are packaged with Tomcat, you can edit this file to add admin and manager access.
+3) webapps
+   Here we store our webapps to execute it.
+
+4) Logs
+   these files is here by default
+

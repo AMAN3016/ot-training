@@ -1,0 +1,43 @@
+What is sed?
+SED stands for stream editor and it can perform lot’s of function on file like, searching, find and replace, insertion or deletion. Though most common use of it is for substitution or for find and replace. By using SED you can edit files even without opening it, which is much quicker way to find and replace something in file, than first opening that file in VI Editor and then changing it.
+It support regular expression which allows it perform complex pattern matching.
+
+Syntax
+
+sed OPTIONS  [SCRIPTS] <name of the file>
+
+sed 's/begin/end' file1.txt 
+
+In above command, we are searching for unix first occurence in a line  and replacing it by linux in file1.txt
+
+so basically 
+/pattern_be_operated/pattern_to_be_inserted
+for ex- /begin/end/
+
+And we can use different option like -
+
+sed 's/begin/end/g' file1.txt     ///replacing the begin word with end in file1.txt
+sed 's/before/after/2 file2.txt   /// replacing the first and second occurence of the word before with after in every line of  file 2
+
+to delete 
+
+sed '2d' file2.txt            ///will delete the second line in file2.txt
+sed '2,10d' file3.txt          ///will delete the lines from 2 to 10th line of file3.txt
+sed '/pattern/d' file3.txt    /// will delete the line which match this pattern
+
+to print
+
+sed 's/expert/beginner/p' file1.txt     //print replaced line twice and line which are not replaced are printed once 
+sed -n 's/expert/beginner/p' file1.txt  //print replaced line only
+
+regexp
+
+sed 's/^.*at/(&)/' file1.txt      // & represent the matched pattern so it will put the matched pattern in parenthesis
+sed 's/\([a-zA-Z0-9][a-zA-Z0-9]*\) \([a-zA-Z0-9][a-zA-Z0-9]*\)/\2 \1/' file2.txt  // and \1 and \2 represent first and second parenthesis it will replace firsttwo words of each lines
+
+
+these are the basics of the sed if you want to know further please follow the link below
+- https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux
+- https://www.geeksforgeeks.org/sed-command-in-unix/
+
+
