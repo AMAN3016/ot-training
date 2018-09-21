@@ -1,0 +1,35 @@
+What is exit status?
+Each command returns a status when it terminates normally or abnormally.
+we can use exit status in shell scripting to display an error or take some sort of action.
+every command executed by shell script or user has an exit status
+It is an integer number.
+
+
+0 - exit status means the command was successful without any errors.
+1-225  - exit status means command has some failure
+? - to check the exit status of the previously executed command
+
+for ex
+you run the command
+
+echo "hi"
+echo $?
+
+its output will be
+hi
+0
+
+as it is successful so it will show 0 as exit status
+
+echoas ""
+
+echo $?
+
+is it going to return numeric value from 1-255
+which means the above command didnt execute successfully
+
+
+
+for further information please follow the links
+-  https://bash.cyberciti.biz/guide/The_exit_status_of_a_command
+- http://tldp.org/LDP/abs/html/exitcodes.html 

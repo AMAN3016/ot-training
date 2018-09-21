@@ -1,0 +1,13 @@
+What is SHebang?
+This ensures that Bash will be used to interpret the script, even if it is executed under another shell
+It is nothing but the absolute path to the Bash interpreter
+It consists of a number sign and an exclamation point character (#!), followed by the full path to the interpreter such as /bin/bash.
+All scripts under Linux execute using the interpreter specified on a first line
+Almost all bash scripts often begin with #!/bin/bash (assuming that Bash has been installed in /bin
+This ensures that Bash will be used to interpret the script, even if it is executed under another shell
+
+
+
+use the below links to know further about it
+- https://bash.cyberciti.biz/guide/Shebang
+- https://stackoverflow.com/questions/3009192/how-does-the-shebang-work

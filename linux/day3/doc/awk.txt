@@ -1,0 +1,28 @@
+What is Awk?
+Awk is a scripting language used for manipulating data and generating reports.The awk command programming language requires no compiling, and allows the user to use variables, numeric functions, string functions, and logical operators.
+
+Why it is used?
+1. AWK Operations:
+(a) Scans a file line by line
+(b) Splits each input line into fields
+(c) Compares input line/fields to pattern
+(d) Performs action(s) on matched lines
+
+2. Useful For:
+(a) Transform data files
+(b) Produce formatted reports
+
+3. Programming Constructs:
+(a) Format output lines
+(b) Arithmetic and string operations
+(c) Conditionals and loops
+
+
+
+
+
+
+you can use below link to know further
+- www.geeksforgeeks.org/awk-command-unixlinux-examples/
+- https://likegeeks.com/awk-command/
+
