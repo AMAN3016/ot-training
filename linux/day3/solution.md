@@ -4,7 +4,7 @@
 
 * *shebang* - you can find the doc in this topics here - [Shebang_documentation](doc/shebang.txt )
 
-* *exit status* - you can find the doc in this topics here - [Exit_documentation](doc/exit_status.txt )
+* *exit status* - you can find the doc in this topics here - [Exit_documentation](doc/exit.txt )
 
 
 # TASK2  Make a script and pass 5 command line arguments(arguments value should be interger)
