@@ -10,14 +10,20 @@
    ```
 
 * partition to be saved
-    First partition –     n -> p -> 1 -> enter -> +10M //sdb1
-    Second partition -  n -> p -> 2 -> enter -> +10M   //sdb2
-    Third partition -    n -> p -> 3 -> enter -> +10M //sdb3
+ 
+- First partition –     n -> p -> 1 -> enter -> +10M //sdb1
+   
+- Second partition -  n -> p -> 2 -> enter -> +10M   //sdb2
+ 
+- Third partition -    n -> p -> 3 -> enter -> +10M //sdb3
 
 ![](media/partition.png)
-    Extended part     - n -> e -> enter -> +2G        //sdb4
-    Fourth partition -  n -> enter -> +50M            //sdb5
-    Fifth partition -      n     
+ 
+- Extended part     - n -> e -> enter -> +2G        //sdb4
+
+- Fourth partition -  n -> enter -> +50M            //sdb5
+
+- Fifth partition -   n  -> enter -> +50M           //sdb6    
 
 ![](media/partition2.png)
 
@@ -39,15 +45,16 @@
      sudo mkfs.ext4 /dev/sdb3 //giving file system to 3rdpartition
      sudo mkfs.ext4 /dev/sdb5 //giving file system to 4thpartition
      sudo mkfs.ext4 /dev/sdb6 //giving file system to 5thpartition
- ```
+   ```
 * mounting partition on respective mount point
+
  ```
    sudo mount /dev/sdb1 /mnt1
    sudo mount /dev/sdb2 /mnt2
    sudo mount /dev/sdb3 /mnt3
    sudo mount /dev/sdb5 /mnt4
    sudo mount /dev/sdb6 /mnt5
-```
+ ```
 
 ## Checking
 
@@ -86,7 +93,6 @@
  sudo lvcreate -L 1G -n oneplus_logical oneplus
  sudo vgs
  sudo lvdisplay
-
 ```
 * Extending the size to 1.5GB
 ```
@@ -101,6 +107,3 @@
 sudo lvreduce -L 500M /dev/oneplus/oneplus_logical
 sudo lvdisplay
 ```
-
-
-
